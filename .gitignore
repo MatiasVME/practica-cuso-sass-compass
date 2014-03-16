@@ -1,0 +1,6 @@
+# Temporal files
+*~
+.directory
+
+# Sass cache
+.sass-cache

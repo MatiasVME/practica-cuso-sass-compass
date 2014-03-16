@@ -1,0 +1,68 @@
+
+//
+// Variables
+//
+
+// Breakpoint
+//
+
+// Big 
+$mw-big: 1024px; // Max Width Big
+
+$break-big: "only screen and (max-width : 1024px)";
+
+$mainnav-height: 150px;
+$mainnav-widht: $mw-big;
+
+$slider-height: 400px;
+$slider-width: $mw-big;
+
+
+// Medium
+$break-medium: "only screen and (max-width : 640px)";
+
+// Small
+$break-small: "only screen and (max-width : 320px)";
+
+/* temp 
+	@media #{$break-big} {
+		max-width: $mw-big;
+	}
+
+	@media #{$break-medium} {
+		max-width: 640px;
+	}
+	
+	@media #{$break-small} {
+		max-width: 320px;
+		background-color: yellow;
+	}*/
+
+//
+// Layout
+//
+
+header {
+	width: 100%;
+}
+
+.mainnav,
+.slider {
+}
+
+.logo {
+}
+
+.slider {
+	@include mpReset($margin: 0 auto);
+	clear: both;
+	height: 400px;
+
+	li {
+		min-width: 100% / 4;
+		height: 400px;
+		&:nth-child(1) { background-color: blue; }
+		&:nth-child(2) { background-color: grey; }
+		&:nth-child(3) { background-color: darkgrey; }
+	}
+}
