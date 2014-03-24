@@ -51,15 +51,15 @@ $src-fonts: "../fonts/";
 //
 
 .logo {
-	font-size: 0.8em;
-	width: 245px;
-	background-color: steelblue;
+	font-size: 1em;
+	width: 300px;
+	margin: 10px auto;
 
 	h1 {
 		padding-right: 0.2em;
 		padding-left: 0.2em;
+		
 	}
-
 }
 
 //
@@ -67,10 +67,20 @@ $src-fonts: "../fonts/";
 //
 
 .social {
-	font-size: 2.2em;
-	margin: 0 auto;
+	@include box-sizing(border-box);
+
+	font-size: 2.3em;
+	width: 225px;
+	height: 40px;
+	margin: 10px auto;
 
 	li {
 		float: left;
+		margin-right: 0.2em;
 	}
 }
+
+.slider {
+	clear: both;
+}
+

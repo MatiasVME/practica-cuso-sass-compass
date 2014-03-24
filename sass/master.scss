@@ -5,25 +5,15 @@
 
 @import "compass/css3";
 
-//
-// Separación de ficheros siguiendo el patron SMACSS
-//
-
 // Base
+@import "base/variables";
 @import "base/normalize";
 @import "base/base";
-@import "base/variables";
 
-// Layout
-@import "layout";
+// Parts
+@import "header";
+@import "body";
+@import "footer";
 
 // Modules
 @import "modules";
-
-// State
-@import "state";
-
-// Theme
-@import "theme/default";
-//@import "theme/valentine-s-days";
-//@import "theme/christmas";

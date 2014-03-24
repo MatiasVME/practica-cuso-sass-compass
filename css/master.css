@@ -517,7 +517,12 @@ img {
   width: 0 / auto;
 }
 
-/* line 14, ../sass/base/_base.scss */
+/* line 11, ../sass/base/_base.scss */
+body {
+  background-image: url("../img/background.jpg");
+}
+
+/* line 20, ../sass/base/_base.scss */
 a,
 a:active,
 a:hover,
@@ -526,47 +531,17 @@ a:link {
   text-decoration: none;
 }
 
-/* temp 
-	@media only screen and (max-width : 1024px) {
-		max-width: $mw-big;
-	}
-
-	@media only screen and (max-width : 640px) {
-		max-width: 640px;
-	}
-	
-	@media only screen and (max-width : 320px) {
-		max-width: 320px;
-		background-color: yellow;
-	}*/
-/* line 45, ../sass/_layout.scss */
-header {
-  width: 100%;
-}
-
-/* line 56, ../sass/_layout.scss */
-.slider {
-  margin: 0 auto;
+/* line 26, ../sass/base/_base.scss */
+h1, h2, h3, h4, h5, h6,
+ul {
+  margin: 0;
   padding: 0;
-  clear: both;
-  height: 400px;
 }
-/* line 61, ../sass/_layout.scss */
-.slider li {
-  min-width: 100% / 4;
-  height: 400px;
-}
-/* line 64, ../sass/_layout.scss */
-.slider li:nth-child(1) {
-  background-color: blue;
-}
-/* line 65, ../sass/_layout.scss */
-.slider li:nth-child(2) {
-  background-color: grey;
-}
-/* line 66, ../sass/_layout.scss */
-.slider li:nth-child(3) {
-  background-color: darkgrey;
+
+/* line 2, ../sass/_body.scss */
+#maincontent {
+  width: 95%;
+  margin: 0 auto;
 }
 
 @font-face {
@@ -618,9 +593,9 @@ header {
 
 /* line 53, ../sass/_modules.scss */
 .logo {
-  font-size: 0.8em;
-  width: 245px;
-  background-color: steelblue;
+  font-size: 1em;
+  width: 300px;
+  margin: 10px auto;
 }
 /* line 58, ../sass/_modules.scss */
 .logo h1 {
@@ -630,15 +605,21 @@ header {
 
 /* line 69, ../sass/_modules.scss */
 .social {
-  font-size: 2.2em;
-  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 2.3em;
+  width: 225px;
+  height: 40px;
+  margin: 10px auto;
 }
-/* line 73, ../sass/_modules.scss */
+/* line 77, ../sass/_modules.scss */
 .social li {
   float: left;
+  margin-right: 0.2em;
 }
 
-/* line 14, ../sass/theme/_default.scss */
-header {
-  background-color: #b8d3e9;
+/* line 83, ../sass/_modules.scss */
+.slider {
+  clear: both;
 }
