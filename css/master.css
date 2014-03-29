@@ -538,10 +538,58 @@ ul {
   padding: 0;
 }
 
+@-webkit-keyframes fadeInLeft {
+  /* line 97, ../sass/animated/animations/_fading.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+
+  /* line 103, ../sass/animated/animations/_fading.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  /* line 111, ../sass/animated/animations/_fading.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+
+  /* line 118, ../sass/animated/animations/_fading.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* line 2, ../sass/_header.scss */
+.mainnav {
+  background-color: rgba(255, 255, 255, 0);
+  margin: 15px 0;
+  padding: 10px 0;
+}
+
 /* line 2, ../sass/_body.scss */
 #maincontent {
   width: 95%;
   margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 10px;
+}
+
+/* line 9, ../sass/_body.scss */
+.mainnav {
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 @font-face {
@@ -591,35 +639,169 @@ ul {
   content: "\e601";
 }
 
-/* line 53, ../sass/_modules.scss */
+@-webkit-keyframes hue {
+  /* line 18, ../sass/_animations.scss */
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  /* line 19, ../sass/_animations.scss */
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes wobble {
+  /* line 194, ../sass/animated/animations/_attention-seekers.scss */
+  0% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+
+  /* line 199, ../sass/animated/animations/_attention-seekers.scss */
+  15% {
+    -webkit-transform: translateX(-25%) rotate(-5deg);
+    transform: translateX(-25%) rotate(-5deg);
+  }
+
+  /* line 204, ../sass/animated/animations/_attention-seekers.scss */
+  30% {
+    -webkit-transform: translateX(20%) rotate(3deg);
+    transform: translateX(20%) rotate(3deg);
+  }
+
+  /* line 209, ../sass/animated/animations/_attention-seekers.scss */
+  45% {
+    -webkit-transform: translateX(-15%) rotate(-3deg);
+    transform: translateX(-15%) rotate(-3deg);
+  }
+
+  /* line 214, ../sass/animated/animations/_attention-seekers.scss */
+  60% {
+    -webkit-transform: translateX(10%) rotate(2deg);
+    transform: translateX(10%) rotate(2deg);
+  }
+
+  /* line 219, ../sass/animated/animations/_attention-seekers.scss */
+  75% {
+    -webkit-transform: translateX(-5%) rotate(-1deg);
+    transform: translateX(-5%) rotate(-1deg);
+  }
+
+  /* line 224, ../sass/animated/animations/_attention-seekers.scss */
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+
+@keyframes wobble {
+  /* line 231, ../sass/animated/animations/_attention-seekers.scss */
+  0% {
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+
+  /* line 237, ../sass/animated/animations/_attention-seekers.scss */
+  15% {
+    -webkit-transform: translateX(-25%) rotate(-5deg);
+    -ms-transform: translateX(-25%) rotate(-5deg);
+    transform: translateX(-25%) rotate(-5deg);
+  }
+
+  /* line 243, ../sass/animated/animations/_attention-seekers.scss */
+  30% {
+    -webkit-transform: translateX(20%) rotate(3deg);
+    -ms-transform: translateX(20%) rotate(3deg);
+    transform: translateX(20%) rotate(3deg);
+  }
+
+  /* line 249, ../sass/animated/animations/_attention-seekers.scss */
+  45% {
+    -webkit-transform: translateX(-15%) rotate(-3deg);
+    -ms-transform: translateX(-15%) rotate(-3deg);
+    transform: translateX(-15%) rotate(-3deg);
+  }
+
+  /* line 255, ../sass/animated/animations/_attention-seekers.scss */
+  60% {
+    -webkit-transform: translateX(10%) rotate(2deg);
+    -ms-transform: translateX(10%) rotate(2deg);
+    transform: translateX(10%) rotate(2deg);
+  }
+
+  /* line 261, ../sass/animated/animations/_attention-seekers.scss */
+  75% {
+    -webkit-transform: translateX(-5%) rotate(-1deg);
+    -ms-transform: translateX(-5%) rotate(-1deg);
+    transform: translateX(-5%) rotate(-1deg);
+  }
+
+  /* line 267, ../sass/animated/animations/_attention-seekers.scss */
+  100% {
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+
+/* line 61, ../sass/_modules.scss */
 .logo {
+  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 10s infinite linear;
   font-size: 1em;
   width: 300px;
   margin: 10px auto;
 }
-/* line 58, ../sass/_modules.scss */
+/* line 68, ../sass/_modules.scss */
 .logo h1 {
   padding-right: 0.2em;
   padding-left: 0.2em;
 }
+/* line 73, ../sass/_modules.scss */
+.logo:hover {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-name: wobble;
+  -moz-animation-name: wobble;
+  -o-animation-name: wobble;
+  animation-name: wobble;
+}
 
-/* line 69, ../sass/_modules.scss */
+/* line 82, ../sass/_modules.scss */
 .social {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 10s infinite linear;
   font-size: 2.3em;
-  width: 225px;
+  width: 262px;
   height: 40px;
   margin: 10px auto;
 }
-/* line 77, ../sass/_modules.scss */
+/* line 91, ../sass/_modules.scss */
 .social li {
   float: left;
-  margin-right: 0.2em;
+  margin-right: 0.4em;
 }
 
-/* line 83, ../sass/_modules.scss */
+/* line 97, ../sass/_modules.scss */
 .slider {
   clear: both;
 }

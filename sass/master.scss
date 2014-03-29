@@ -1,14 +1,15 @@
 
-//
-// Plugin Compass
-//
-
+// Vendors
 @import "compass/css3";
 
 // Base
 @import "base/variables";
 @import "base/normalize";
 @import "base/base";
+
+// Others 
+@import "animations";
+@import "mixins";
 
 // Parts
 @import "header";

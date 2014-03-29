@@ -1,10 +1,9 @@
 
 # Ejemplo proyecto en Sass y Compass
 
-Ejemplo proyecto usando Sass y Compass, también utilizando algunos plugins.
+Ejemplo proyecto usando Sass y Compass.
 
-## Plugins
+# Ficheros Sass adicionales (no plugins)
 
-Susy
-url: http://susy.oddbird.net/
-
+Animate(d).sass
+https://github.com/simko-io/animated.sass

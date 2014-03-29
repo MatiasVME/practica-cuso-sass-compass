@@ -47,10 +47,20 @@ $src-fonts: "../fonts/";
 }
 
 //
+// Reused animations
+//
+
+@include kf-animation(hue);
+
+//
 // Logo
 //
 
+@include animation(wobble);
+
 .logo {
+	@include font-animation(hue);
+
 	font-size: 1em;
 	width: 300px;
 	margin: 10px auto;
@@ -58,7 +68,10 @@ $src-fonts: "../fonts/";
 	h1 {
 		padding-right: 0.2em;
 		padding-left: 0.2em;
-		
+	}
+
+	&:hover {
+		@include animate(wobble, 1s, 1s);
 	}
 }
 
@@ -68,19 +81,19 @@ $src-fonts: "../fonts/";
 
 .social {
 	@include box-sizing(border-box);
+	@include font-animation(hue);
 
 	font-size: 2.3em;
-	width: 225px;
+	width: 262px;
 	height: 40px;
 	margin: 10px auto;
 
 	li {
 		float: left;
-		margin-right: 0.2em;
+		margin-right: 0.4em;
 	}
 }
 
 .slider {
 	clear: both;
 }
-

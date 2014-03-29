@@ -1,0 +1,22 @@
+
+//
+// Vendor
+//
+
+@import "animated/animated"; 
+
+//
+// External
+//
+
+// Title of animate.css
+// site: http://daneden.github.io/animate.css/
+
+@mixin kf-animation ($name-animation) {
+	@if ($name-animation == "hue") {
+		@-webkit-keyframes hue {
+		  from { -webkit-filter: hue-rotate(0deg); }
+		  to { -webkit-filter: hue-rotate(-360deg); }
+		}
+	}
+}
